@@ -55,25 +55,31 @@ header h1 {
   padding: 20px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 576px) {
   .photo-gallery {
-    column-count: 4;
-  }
-}
-
-@media (max-width: 992px) {
-  .photo-gallery {
-    column-count: 3;
-  }
-}
-
-@media (max-width: 768px) {
-  .photo-gallery {
-    column-count: 2;
-    column-gap: 12px;
+    column-count: 1;
+    column-gap: 8px;
     padding: 10px;
-    padding-bottom: 40px;
   }
+
+  .photo img {
+    border-radius: 6px;
+    aspect-ratio: 2/3; /*можно 3/4*/
+    box-shadow: none; /* ← временно для теста скорости */
+  }
+
+  h1 {
+    font-size: 28px;
+    padding: 0 12px;
+    word-break: break-word;
+  }
+
+  .social-links img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 
   header h1 {
     font-size: 36px;
@@ -98,7 +104,7 @@ header h1 {
     margin: 0 6px;
     padding: 8px;
   }
-}
+
 
 .photo {
   opacity: 0;
@@ -108,11 +114,13 @@ header h1 {
 }
 
 .photo img {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9); /* лёгкая тень */
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25); /* лёгкая тень */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* плавное увеличение и тень */
   border-radius: 10px; /* скруглённые края */
   display: block;
+  aspect-ratio: 2/3; /* или 3/4 — зависит от фото */
   width: 100%;
+  object-fit: cover;
   height: auto;
   break-inside: avoid;
   margin-bottom: 30px; /* ← увеличено */
