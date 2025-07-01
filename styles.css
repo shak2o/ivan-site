@@ -3,7 +3,6 @@
 }
 
 footer {
-
   color: black;
   padding: 8px;
   margin-top: 16px;
@@ -16,8 +15,7 @@ body {
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
-
-  background-image: url('backround.png');
+  background-image: url('bkgrnd.gif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +61,7 @@ header h1 {
   }
 
   .photo img {
-    border-radius: 6px;
+    /*border-radius: 6px;*/
     aspect-ratio: 2/3; /*можно 3/4*/
     box-shadow: none; /* ← временно для теста скорости */
   }
@@ -116,7 +114,7 @@ header h1 {
 .photo img {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25); /* лёгкая тень */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* плавное увеличение и тень */
-  border-radius: 10px; /* скруглённые края */
+  /*border-radius: 10px; /* скруглённые края */
   display: block;
   aspect-ratio: 2/3; /* или 3/4 — зависит от фото */
   width: 100%;
@@ -213,7 +211,7 @@ h1 {
   display: block;
   width: auto;
   height: auto;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
   transition: transform 0.2s ease; /* плавное изменение масштаба */
 }
 
@@ -289,7 +287,7 @@ footer {
 
 .photo img {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
+  /*border-radius: 12px;*/
   display: block;
   width: 100%;
   height: auto;
